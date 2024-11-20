@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio de Sesion y Juego</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <div class="auth-container">
+        <div id="auth">
+            <h2>Inicio de Sesion</h2>
+            <form id="loginForm">
+                <input type="text" id="loginUsername" placeholder="Nombre de Usuario" required>
+                <input type="password" id="loginPassword" placeholder="Contraseña" required>
+                <button type="submit">Iniciar Sesion</button>
+            </form>
+            <h2>Registro</h2>
+            <form id="registerForm">
+                <input type="text" id="registerUsername" placeholder="Nombre de Usuario" required>
+                <input type="password" id="registerPassword" placeholder="Contraseña" required>
+                <button type="submit">Registrar</button>
+            </form>
+        </div>
+    </div>
+    <div class="game-container">
+        <div id="game" class="game-section">
+            <h2>Juego: Piedra Papel o Tijeras</h2>
+            <button onclick="playGame('rock')">Piedra</button>
+            <button onclick="playGame('paper')">Papel</button>
+            <button onclick="playGame('scissors')">Tijeras</button>
+            <p id="result"></p>
+        </div>
+        <div id="game2" class="game-section">
+            <h2>Juego: Piedra Papel Tijeras Lagarto o Spock</h2>
+            <div class="game-buttons">
+                <button onclick="playGame2('rock')">Piedra</button>
+                <button onclick="playGame2('paper')">Papel</button>
+                <button onclick="playGame2('scissors')">Tijeras</button>
+                <button onclick="playGame2('lizard')">Lagarto</button>
+                <button onclick="playGame2('spock')">Spock</button>
+            </div>
+            <p id="result2"></p>
+        </div>
+    </div>
+    <script src="java.js"></script>
+</body>
+</html>
